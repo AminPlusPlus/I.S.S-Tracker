@@ -1,0 +1,6 @@
+framework module Pods_iSSLocationUITests {
+  umbrella header "Pods-iSSLocationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
