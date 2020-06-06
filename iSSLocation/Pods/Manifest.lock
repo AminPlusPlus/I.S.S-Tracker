@@ -1,16 +1,20 @@
 PODS:
   - Mapbox-iOS-SDK (4.2.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 4.2)
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Mapbox-iOS-SDK
+    - SnapKit
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 706d52e3ad095e16944d9643f37d5a97627f6c19
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 6a08fcca05fd5693184b3a59dc91d3ca3ce16e42
+PODFILE CHECKSUM: 2d8f80a032c39a6f03c04ceb387b985520f66267
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1

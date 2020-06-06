@@ -7,6 +7,7 @@ target 'iSSLocation' do
 
   # Pods for iSSLocation
   pod 'Mapbox-iOS-SDK', '~> 4.2'
+  pod 'SnapKit', '~> 5.0.0'
 
   target 'iSSLocationTests' do
     inherit! :search_paths
