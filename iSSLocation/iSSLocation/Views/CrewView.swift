@@ -46,10 +46,16 @@ final class CrewView: UIView {
         backgroundColor = .white
         layer.cornerRadius = 15
         clipsToBounds = true
-
+       
+        
+        //Add subviews
+        addSubview(profileImage)
+        addSubview(infoLabel)
+        
+        //Setup constains
+        setupConstrains()
     }
-    
-    
+
     
     /// Setup constains view after adding subviews
     private func setupConstrains(){
@@ -66,11 +72,7 @@ final class CrewView: UIView {
          }
     }
     
-    
-    
-    
-    
-    
+
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

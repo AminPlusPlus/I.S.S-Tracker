@@ -10,6 +10,18 @@ import UIKit
 import MapKit
 import SnapKit
 
+class SateliteAnotation : NSObject, MKAnnotation {
+    let title: String?
+    let coordinate: CLLocationCoordinate2D
+
+    init(title: String?,coordinate: CLLocationCoordinate2D) {
+    
+      self.title = title
+      self.coordinate = coordinate
+      
+    }
+}
+
 class HomeViewController: UIViewController {
     
     let mapView :  MKMapView = {
@@ -28,34 +40,38 @@ class HomeViewController: UIViewController {
     
     let scrollview : UIScrollView = {
         let scroll = UIScrollView()
-        scroll.backgroundColor = .black
+        //scroll.backgroundColor = .black
         scroll.isPagingEnabled = true
         return scroll
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+
         view.addSubview(mapView)
         view.addSubview(scrollview)
         scrollview.addSubview(stackView)
        
+        mapView.delegate = self
+        
         initView()
         
         (0...2).forEach { (_ ) in
         
             let crewView = CrewView()
-           
+            
             stackView.addArrangedSubview(crewView)
         
             crewView.snp.makeConstraints { (make) in
                 make.height.equalTo(180)
                 make.width.equalTo(self.view.frame.width - 100)
             }
-            
-    
         }
+        
+        
+        setupAnotation()
+        
     }
     
     
@@ -80,5 +96,36 @@ class HomeViewController: UIViewController {
         
     }
     
+    private func setupAnotation () {
+        
+        let t1 = SateliteAnotation(title: "ISS", coordinate: CLLocationCoordinate2D(latitude: 41.006630 , longitude: -91.965050 ))
+        
+        
+        mapView.addAnnotation(t1)
+        
+    }
+    
 
+}
+
+extension HomeViewController  : MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        let customView = MKAnnotationView(annotation: annotation, reuseIdentifier: "iss")
+        customView.image = UIImage(#imageLiteral(resourceName: "iss2.png"))
+        
+        customView.snp.makeConstraints { (make) in
+            make.height.width.equalTo(50)
+        }
+        
+        return customView
+    }
+    
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        
+        if let iss = view.annotation as? SateliteAnotation {
+            print("clicked : \(iss)")
+        }
+    }
+    
 }
