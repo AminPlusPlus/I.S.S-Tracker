@@ -40,7 +40,6 @@ class HomeViewController: UIViewController {
     
     let scrollview : UIScrollView = {
         let scroll = UIScrollView()
-        //scroll.backgroundColor = .black
         scroll.isPagingEnabled = true
         return scroll
     }()
@@ -50,23 +49,28 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         view.addSubview(mapView)
-        view.addSubview(scrollview)
-        scrollview.addSubview(stackView)
+       // view.addSubview(scrollview)
+        //scrollview.addSubview(stackView)
        
         mapView.delegate = self
         
         initView()
         
-        (0...2).forEach { (_ ) in
+      
+        let randColors = [UIColor.red,.white,.brown,.green]
         
-            let crewView = CrewView()
-            
-            stackView.addArrangedSubview(crewView)
+        (0...5).forEach { (_ ) in
         
+            let crewView = CardView()
+            crewView.backgroundColor = randColors.randomElement()
+            view.addSubview(crewView)
+           // stackView.addArrangedSubview(crewView)
             crewView.snp.makeConstraints { (make) in
                 make.height.equalTo(180)
-                make.width.equalTo(self.view.frame.width - 100)
+                make.left.right.equalToSuperview().inset(20)
+                make.bottom.equalToSuperview().inset(50)
             }
+        
         }
         
         
@@ -82,25 +86,23 @@ class HomeViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-        //scroll
-        scrollview.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview().inset(20)
-            make.height.equalTo(180)
-            make.bottom.equalToSuperview().inset(25)
-        }
-        
-        //stack
-        stackView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
+//        //scroll
+//        scrollview.snp.makeConstraints { (make) in
+//            make.left.right.equalToSuperview().inset(20)
+//            make.height.equalTo(180)
+//            make.bottom.equalToSuperview().inset(25)
+//        }
+//
+//        //stack
+//        stackView.snp.makeConstraints { (make) in
+//            make.edges.equalToSuperview()
+//        }
         
     }
     
     private func setupAnotation () {
         
         let t1 = SateliteAnotation(title: "ISS", coordinate: CLLocationCoordinate2D(latitude: 41.006630 , longitude: -91.965050 ))
-        
-        
         mapView.addAnnotation(t1)
         
     }
