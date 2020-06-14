@@ -37,7 +37,6 @@ class CustomCalloutView: UIView, MGLCalloutView {
     
     let mainBody: UIButton
     
-    
     required init(representedObject: MGLAnnotation) {
         self.representedObject = representedObject
         self.mainBody = UIButton(type: .system)

@@ -111,13 +111,23 @@ class HomeViewController: UIViewController {
 extension HomeViewController  : MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
+        //
         let customView = MKAnnotationView(annotation: annotation, reuseIdentifier: "iss")
-        customView.image = UIImage(#imageLiteral(resourceName: "iss2.png"))
+        customView.backgroundColor = UIColor(named: "iss-annotation")
+        customView.layer.cornerRadius = 25
+        customView.layer.masksToBounds = false
+        // customView.clipsToBounds = true
+        customView.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 50, height: 50), cornerRadius: 25).cgPath
+        customView.layer.shadowRadius = 5
+        customView.layer.shadowOffset = .zero
+        customView.layer.shadowOpacity = 1
+        
+        
         
         customView.snp.makeConstraints { (make) in
             make.height.width.equalTo(50)
         }
-        
+        //print("AnnotFrame : 2 \(customView.snp.)")
         return customView
     }
     

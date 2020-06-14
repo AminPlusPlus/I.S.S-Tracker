@@ -20,7 +20,7 @@ final class CrewView: UIView {
     private let infoLabel : UILabel = {
         let label = UILabel()
         label.numberOfLines = 10
-        
+        label.textColor = UIColor(named: "text-color")
         
         //MARK: demo info
         let contentAttribute = NSMutableAttributedString(string: "Doug Hurley", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20, weight: .bold)])
@@ -43,10 +43,17 @@ final class CrewView: UIView {
         super.init(frame: frame)
         
         //Backgound view
-        backgroundColor = .white
+        backgroundColor = UIColor(named: "crew-card-bg")
         layer.cornerRadius = 15
-        clipsToBounds = true
-       
+        clipsToBounds = false
+        
+        //Shadow
+        let shadowRect = CGRect(x: 0, y: 0, width: 130, height: 130)
+        layer.shadowPath = UIBezierPath(roundedRect: shadowRect, cornerRadius: 15).cgPath
+        layer.shadowRadius = 5
+        layer.shadowOffset = .zero
+        layer.shadowOpacity = 1
+        layer.masksToBounds = false
         
         //Add subviews
         addSubview(profileImage)
