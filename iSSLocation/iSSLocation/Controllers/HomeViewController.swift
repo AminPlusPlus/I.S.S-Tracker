@@ -86,23 +86,14 @@ class HomeViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-//        //scroll
-//        scrollview.snp.makeConstraints { (make) in
-//            make.left.right.equalToSuperview().inset(20)
-//            make.height.equalTo(180)
-//            make.bottom.equalToSuperview().inset(25)
-//        }
-//
-//        //stack
-//        stackView.snp.makeConstraints { (make) in
-//            make.edges.equalToSuperview()
-//        }
+
         
     }
     
     private func setupAnotation () {
         
         let t1 = SateliteAnotation(title: "ISS", coordinate: CLLocationCoordinate2D(latitude: 41.006630 , longitude: -91.965050 ))
+
         mapView.addAnnotation(t1)
         
     }
@@ -116,28 +107,25 @@ extension HomeViewController  : MKMapViewDelegate {
         //
         let customView = MKAnnotationView(annotation: annotation, reuseIdentifier: "iss")
         customView.backgroundColor = UIColor(named: "iss-annotation")
-        customView.layer.cornerRadius = 25
+        customView.layer.cornerRadius = 20
         customView.layer.masksToBounds = false
         // customView.clipsToBounds = true
-        customView.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 50, height: 50), cornerRadius: 25).cgPath
+        customView.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 40, height: 40), cornerRadius: 20).cgPath
         customView.layer.shadowRadius = 5
         customView.layer.shadowOffset = .zero
         customView.layer.shadowOpacity = 1
-        
-        
+        customView.layer.borderColor = UIColor(named: "StrokeAnnColor")!.cgColor
+        customView.layer.borderWidth = 4.0
         
         customView.snp.makeConstraints { (make) in
-            make.height.width.equalTo(50)
+            make.height.width.equalTo(40)
         }
-        //print("AnnotFrame : 2 \(customView.snp.)")
+       
         return customView
     }
-    
-    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
         
-        if let iss = view.annotation as? SateliteAnotation {
-            print("clicked : \(iss)")
-        }
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print(view)
     }
     
 }

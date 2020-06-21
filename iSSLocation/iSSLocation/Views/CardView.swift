@@ -44,24 +44,46 @@ final class CardView: UIView {
         
         //Backgound view
         backgroundColor = UIColor(named: "crew-card-bg")
-        //layer.cornerRadius = 15
-       // clipsToBounds = false
+        layer.cornerRadius = 10
+        clipsToBounds = false
         
-        
+    
         //Add subviews
-       // addSubview(profileImage)
-       // addSubview(infoLabel)
+        addSubview(profileImage)
+        addSubview(infoLabel)
         
         //Setup constains
-       // setupConstrains()
+        setupConstrains()
   
+        //pan gesture
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
+        
         
         addGestureRecognizer(panGesture)
+        addGestureRecognizer(tapGesture)
       
     }
 
     
+    /// Setup constains view after adding subviews
+    private func setupConstrains(){
+        
+        profileImage.snp.makeConstraints { (make) in
+             make.left.bottom.top.equalToSuperview()
+
+             make.width.equalTo(130)
+         }
+
+         infoLabel.snp.makeConstraints { (make) in
+             make.left.equalTo(profileImage.snp.right).offset(20)
+             make.right.equalToSuperview().inset(10)
+             make.top.equalToSuperview().inset(20)
+         }
+    }
+    
+    /// Handle cart gesture movements
+    /// - Parameter gesture: UIPanGestureRecognizer
     @objc private func handlePanGesture(_ gesture : UIPanGestureRecognizer) {
         let gestureX = gesture.translation(in: nil ).x
         frame.origin.x = gestureX + 20
@@ -80,33 +102,17 @@ final class CardView: UIView {
                 UIView.animate(withDuration: 0.1, animations: {
                     self.frame.origin.x = (gestureX>0) ? self.superview!.frame.width + 100 : -(self.superview!.frame.width + 50)
                 }) { (_ ) in
-                    
+                    let generator = UIImpactFeedbackGenerator(style: .soft)
+                    generator.impactOccurred()
                 }
             }
         }
-        
-        
-        
+    
     }
     
-    
-    
-    
-    
-    /// Setup constains view after adding subviews
-    private func setupConstrains(){
+    @objc private func handleTapGesture (_ gesture: UITapGestureRecognizer){
         
-        profileImage.snp.makeConstraints { (make) in
-             make.left.bottom.top.equalToSuperview()
-
-             make.width.equalTo(130)
-         }
-
-         infoLabel.snp.makeConstraints { (make) in
-             make.left.equalTo(profileImage.snp.right).offset(20)
-             make.right.equalToSuperview().inset(10)
-             make.top.equalToSuperview().inset(20)
-         }
+        UIApplication.shared.windows.first?.rootViewController!.present(DetailCardViewController(), animated: true, completion: nil)
     }
     
     
