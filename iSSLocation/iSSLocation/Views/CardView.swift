@@ -8,8 +8,11 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 final class CardView: UIView {
+    
+    var gestureValue =  PassthroughSubject<CGFloat, Never>()
     
     private let profileImage : UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Doug_Hurley.jpg"))
@@ -42,18 +45,20 @@ final class CardView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        //Backgound view
-        backgroundColor = UIColor(named: "crew-card-bg")
-        layer.cornerRadius = 10
-        clipsToBounds = false
-        
-    
         //Add subviews
         addSubview(profileImage)
         addSubview(infoLabel)
         
+        //Backgound view
+        backgroundColor = UIColor(named: "crew-card-bg")
+        layer.cornerRadius = 10
+       
+    
         //Setup constains
         setupConstrains()
+        
+        profileImage.layer.cornerRadius = 60
+        profileImage.clipsToBounds = true
   
         //pan gesture
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
@@ -70,9 +75,10 @@ final class CardView: UIView {
     private func setupConstrains(){
         
         profileImage.snp.makeConstraints { (make) in
-             make.left.bottom.top.equalToSuperview()
+            make.left.top.equalToSuperview().inset(10)
 
-             make.width.equalTo(130)
+            make.height.width.equalTo(120)
+            
          }
 
          infoLabel.snp.makeConstraints { (make) in
@@ -86,14 +92,15 @@ final class CardView: UIView {
     /// - Parameter gesture: UIPanGestureRecognizer
     @objc private func handlePanGesture(_ gesture : UIPanGestureRecognizer) {
         let gestureX = gesture.translation(in: nil ).x
-        frame.origin.x = gestureX + 20
-        print(frame.origin.x)
+        frame.origin.x = gestureX
+        self.gestureValue.send(frame.origin.x)
         if gesture.state == .ended {
            
             if abs(frame.origin.x) < superview!.frame.width / 2 {
                 UIView.animate(withDuration: 0.2, delay: 0,usingSpringWithDamping: 2, initialSpringVelocity: 5, options: .curveEaseInOut,
                                animations: {
-                                self.frame.origin.x = 20
+                                self.frame.origin.x = 0
+                                self.gestureValue.send(0)
                 }) { (_ ) in
                     
                 }

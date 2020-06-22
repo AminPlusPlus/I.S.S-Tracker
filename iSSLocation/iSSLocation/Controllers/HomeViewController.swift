@@ -9,28 +9,17 @@
 import UIKit
 import MapKit
 import SnapKit
-
-class SateliteAnotation : NSObject, MKAnnotation {
-    let title: String?
-    let coordinate: CLLocationCoordinate2D
-
-    init(title: String?,coordinate: CLLocationCoordinate2D) {
-    
-      self.title = title
-      self.coordinate = coordinate
-      
-    }
-}
+import Combine
 
 class HomeViewController: UIViewController {
     
-    let mapView :  MKMapView = {
+    private let mapView :  MKMapView = {
         let mapView = MKMapView()
         
         return mapView
     }()
     
-    let stackView : UIStackView = {
+    private let stackView : UIStackView = {
         let v = UIStackView()
         v.alignment = .leading
         v.distribution = .equalSpacing
@@ -38,38 +27,47 @@ class HomeViewController: UIViewController {
         return v
     }()
     
-    let scrollview : UIScrollView = {
-        let scroll = UIScrollView()
-        scroll.isPagingEnabled = true
-        return scroll
-    }()
+    private let containerCardView = UIView()
+    
+    var cancellable : AnyCancellable?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         view.addSubview(mapView)
-       // view.addSubview(scrollview)
-        //scrollview.addSubview(stackView)
+        view.addSubview(containerCardView)
+
        
         mapView.delegate = self
         
         initView()
         
-      
-        let randColors = [UIColor.red,.white,.brown,.green]
         
-        (0...5).forEach { (_ ) in
+        (0...1).forEach { (i) in
         
             let crewView = CardView()
-            crewView.backgroundColor = randColors.randomElement()
-            view.addSubview(crewView)
-           // stackView.addArrangedSubview(crewView)
+            containerCardView.addSubview(crewView)
+            
             crewView.snp.makeConstraints { (make) in
-                make.height.equalTo(180)
-                make.left.right.equalToSuperview().inset(20)
-                make.bottom.equalToSuperview().inset(50)
+                make.edges.equalToSuperview()
             }
+            
+            
+            
+            cancellable = crewView.gestureValue.sink(receiveValue: { value in
+                
+                let val = 0.5 * (abs(value) / 100)
+                print(val )
+                
+                if val <= 1 {
+                    self.containerCardView.subviews[0].transform = CGAffineTransform(scaleX: val, y:  val)
+                    self.containerCardView.subviews[0].alpha = val
+                }
+              
+            })
+            print(cancellable.debugDescription)
         
         }
         
@@ -81,18 +79,25 @@ class HomeViewController: UIViewController {
     
     /// Constrains
     private func initView(){
+        
         //map
         mapView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
         
+        //containerView
+        containerCardView.snp.makeConstraints { (make) in
+            make.height.equalTo(180)
+            make.left.right.equalToSuperview().inset(20)
+            make.bottom.equalToSuperview().inset(50)
+        }
 
         
     }
     
     private func setupAnotation () {
         
-        let t1 = SateliteAnotation(title: "ISS", coordinate: CLLocationCoordinate2D(latitude: 41.006630 , longitude: -91.965050 ))
+        let t1 = SatelliteAnotation(title: "ISS", coordinate: CLLocationCoordinate2D(latitude: 41.006630 , longitude: -91.965050 ))
 
         mapView.addAnnotation(t1)
         
@@ -103,29 +108,13 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController  : MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        //
-        let customView = MKAnnotationView(annotation: annotation, reuseIdentifier: "iss")
-        customView.backgroundColor = UIColor(named: "iss-annotation")
-        customView.layer.cornerRadius = 20
-        customView.layer.masksToBounds = false
-        // customView.clipsToBounds = true
-        customView.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 40, height: 40), cornerRadius: 20).cgPath
-        customView.layer.shadowRadius = 5
-        customView.layer.shadowOffset = .zero
-        customView.layer.shadowOpacity = 1
-        customView.layer.borderColor = UIColor(named: "StrokeAnnColor")!.cgColor
-        customView.layer.borderWidth = 4.0
-        
-        customView.snp.makeConstraints { (make) in
-            make.height.width.equalTo(40)
-        }
-       
-        return customView
+        return SatelliteAnnotationView(annotation: annotation, reuseIdentifier: "iss")
     }
         
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print(view)
+      
+       
     }
     
 }

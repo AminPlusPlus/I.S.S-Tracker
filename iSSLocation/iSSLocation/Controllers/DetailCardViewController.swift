@@ -14,9 +14,17 @@ class DetailCardViewController: UIViewController, WKNavigationDelegate {
 
     private var topView : UIView = {
         let v = UIView()
-        v.backgroundColor = .white
+        v.backgroundColor = UIColor(named: "crew-card-bg")
         
         return v
+    }()
+    
+    private var titleLabel : UILabel = {
+        let label = UILabel()
+        label.text = "Wikipedia"
+        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        
+        return label
     }()
     
     private lazy var acitivityIndicator : UIActivityIndicatorView = {
@@ -26,6 +34,8 @@ class DetailCardViewController: UIViewController, WKNavigationDelegate {
         indicator.activityIndicatorViewStyle = .medium
         return indicator
     }()
+    
+    
     
     private var containerView = UIView()
     
@@ -41,7 +51,7 @@ class DetailCardViewController: UIViewController, WKNavigationDelegate {
         setupView()
         
         //load
-        let myURL = URL(string:"https://www.apple.com")
+        let myURL = URL(string:"https://en.wikipedia.org/wiki/Doug_Hurley")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
     }
@@ -52,6 +62,7 @@ class DetailCardViewController: UIViewController, WKNavigationDelegate {
         view.addSubview(topView)
         view.addSubview(containerView)
         view.addSubview(acitivityIndicator)
+        topView.addSubview(titleLabel)
         
         //start load
         acitivityIndicator.startAnimating()
@@ -65,6 +76,10 @@ class DetailCardViewController: UIViewController, WKNavigationDelegate {
         containerView.snp.makeConstraints { (make) in
             make.left.right.bottom.equalToSuperview()
             make.top.equalTo(topView.snp.bottom)
+        }
+        
+        titleLabel.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
         }
         
     }

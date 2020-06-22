@@ -14,14 +14,14 @@ internal class DataService
     
      //MARK: Endpoints
      let issLocationEndpoint  = "http://api.open-notify.org/iss-now.json"
-     let issCrewEndpoint = "http://api.open-notify.org/astros.json"
+     let issCrewEndpoint      = "http://api.open-notify.org/astros.json"
     
      //MARK: Keys for UserDefault
-     let issPositionKey = "IssPositionOnMap"
+     let issPositionKey  = "IssPositionOnMap"
      let issTimeStampKey = "IssTime"
     
      var iSSLocation : ISSLocation?
-     var iSSCrew : ISSCrew?
+     var iSSCrew     : ISSCrew?
     
     //MARK: Request to get ISS Current Location
     func RequestLocationISS (issLocationResult : @escaping (ISSLocation) -> Void, Error : @escaping (String) -> Void)
