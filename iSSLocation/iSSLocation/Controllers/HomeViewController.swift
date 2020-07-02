@@ -67,12 +67,14 @@ class HomeViewController: UIViewController {
                 }
               
             })
-            print(cancellable.debugDescription)
+           
         
         }
         
         
         setupAnotation()
+        
+        
         
     }
     
