@@ -13,7 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run tests
-      run: xcodebuild -project 'iSSLocation.xcworkspace' -scheme 'iSSLocation' -destination 'platform=iOS Simulator,name=iPhone 11' test
     - name: Build App
       run: xcodebuild -project 'iSSLocation.xcworkspace' -scheme 'iSSLocation' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
