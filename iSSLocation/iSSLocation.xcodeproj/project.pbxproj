@@ -12,7 +12,6 @@
 		0D1EE8F72100AB77002C76E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1EE8F52100AB77002C76E3 /* Main.storyboard */; };
 		0D1EE8F92100AB78002C76E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1EE8F82100AB78002C76E3 /* Assets.xcassets */; };
 		0D1EE8FC2100AB78002C76E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1EE8FA2100AB78002C76E3 /* LaunchScreen.storyboard */; };
-		0D1EE9072100AB78002C76E3 /* iSSLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE9062100AB78002C76E3 /* iSSLocationTests.swift */; };
 		0D1EE9272100B03E002C76E3 /* ISSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE9262100B03E002C76E3 /* ISSLocation.swift */; };
 		0D1EE9292100B0F6002C76E3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE9282100B0F6002C76E3 /* DataService.swift */; };
 		0D1EE92B2100BE91002C76E3 /* ISSCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */; };
@@ -23,23 +22,16 @@
 		0D32355524A01FB80037748A /* SatelliteAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355424A01FB80037748A /* SatelliteAnotation.swift */; };
 		0D32355924A16EBE0037748A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355824A16EBE0037748A /* Endpoint.swift */; };
 		0D49A2A2248C20B900549505 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A2A1248C20B900549505 /* CardView.swift */; };
+		0DA44B0924B5F67000FF731C /* iSSLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA44B0824B5F67000FF731C /* iSSLocationTests.swift */; };
+		0DA44B1324B5F7C000FF731C /* iSSCrewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA44B1224B5F7C000FF731C /* iSSCrewTest.swift */; };
 		0DAA864324AD74BE00B4D219 /* IssRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAA864224AD74BE00B4D219 /* IssRepository.swift */; };
 		0DAA864624AD786F00B4D219 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAA864524AD786F00B4D219 /* Networking.swift */; };
 		0DE90D26248170F900F6106D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE90D25248170F900F6106D /* HomeViewController.swift */; };
-		0F7199316A14259B549E0657 /* Pods_iSSLocationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6822F5D2A8AD0207909E1E9 /* Pods_iSSLocationUITests.framework */; };
 		9896C7F9496F991237B391ED /* Pods_iSSLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FF1F4D79341523131B1868 /* Pods_iSSLocation.framework */; };
-		CFEDC8E25687AB3135BE86BB /* Pods_iSSLocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D447424D7B33E9C6D356484 /* Pods_iSSLocationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D1EE9032100AB78002C76E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D1EE8E62100AB77002C76E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D1EE8ED2100AB77002C76E3;
-			remoteInfo = iSSLocation;
-		};
-		0D1EE90E2100AB78002C76E3 /* PBXContainerItemProxy */ = {
+		0DA44B0B24B5F67000FF731C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D1EE8E62100AB77002C76E3 /* Project object */;
 			proxyType = 1;
@@ -56,10 +48,6 @@
 		0D1EE8F82100AB78002C76E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D1EE8FB2100AB78002C76E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D1EE8FD2100AB78002C76E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D1EE9022100AB78002C76E3 /* iSSLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSSLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D1EE9062100AB78002C76E3 /* iSSLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSSLocationTests.swift; sourceTree = "<group>"; };
-		0D1EE9082100AB78002C76E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D1EE90D2100AB78002C76E3 /* iSSLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSSLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1EE9262100B03E002C76E3 /* ISSLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocation.swift; sourceTree = "<group>"; };
 		0D1EE9282100B0F6002C76E3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSCrew.swift; sourceTree = "<group>"; };
@@ -70,6 +58,10 @@
 		0D32355424A01FB80037748A /* SatelliteAnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteAnotation.swift; sourceTree = "<group>"; };
 		0D32355824A16EBE0037748A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		0D49A2A1248C20B900549505 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0DA44B0624B5F67000FF731C /* iSSLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSSLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA44B0824B5F67000FF731C /* iSSLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSSLocationTests.swift; sourceTree = "<group>"; };
+		0DA44B0A24B5F67000FF731C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DA44B1224B5F7C000FF731C /* iSSCrewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSSCrewTest.swift; sourceTree = "<group>"; };
 		0DAA864224AD74BE00B4D219 /* IssRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssRepository.swift; sourceTree = "<group>"; };
 		0DAA864524AD786F00B4D219 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		0DE90D25248170F900F6106D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,19 +85,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D1EE8FF2100AB78002C76E3 /* Frameworks */ = {
+		0DA44B0324B5F67000FF731C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFEDC8E25687AB3135BE86BB /* Pods_iSSLocationTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D1EE90A2100AB78002C76E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F7199316A14259B549E0657 /* Pods_iSSLocationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0D1EE8F02100AB77002C76E3 /* iSSLocation */,
-				0D1EE9052100AB78002C76E3 /* iSSLocationTests */,
+				0DA44B0724B5F67000FF731C /* iSSLocationTests */,
 				0D1EE8EF2100AB77002C76E3 /* Products */,
 				811CFE62008C831000BA0AA4 /* Pods */,
 				0A44DCA69B54BFC2FC7F0BEF /* Frameworks */,
@@ -137,8 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0D1EE8EE2100AB77002C76E3 /* iSSLocation.app */,
-				0D1EE9022100AB78002C76E3 /* iSSLocationTests.xctest */,
-				0D1EE90D2100AB78002C76E3 /* iSSLocationUITests.xctest */,
+				0DA44B0624B5F67000FF731C /* iSSLocationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,15 +137,6 @@
 				0D1EE91F2100ABCF002C76E3 /* Controllers */,
 			);
 			path = iSSLocation;
-			sourceTree = "<group>";
-		};
-		0D1EE9052100AB78002C76E3 /* iSSLocationTests */ = {
-			isa = PBXGroup;
-			children = (
-				0D1EE9062100AB78002C76E3 /* iSSLocationTests.swift */,
-				0D1EE9082100AB78002C76E3 /* Info.plist */,
-			);
-			path = iSSLocationTests;
 			sourceTree = "<group>";
 		};
 		0D1EE91F2100ABCF002C76E3 /* Controllers */ = {
@@ -215,6 +188,24 @@
 				0D1EE9282100B0F6002C76E3 /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0DA44B0724B5F67000FF731C /* iSSLocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DA44B1124B5F7A200FF731C /* Model */,
+				0DA44B0824B5F67000FF731C /* iSSLocationTests.swift */,
+				0DA44B0A24B5F67000FF731C /* Info.plist */,
+			);
+			path = iSSLocationTests;
+			sourceTree = "<group>";
+		};
+		0DA44B1124B5F7A200FF731C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DA44B1224B5F7C000FF731C /* iSSCrewTest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0DAA864124AD745C00B4D219 /* Repositories */ = {
@@ -269,43 +260,23 @@
 			productReference = 0D1EE8EE2100AB77002C76E3 /* iSSLocation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D1EE9012100AB78002C76E3 /* iSSLocationTests */ = {
+		0DA44B0524B5F67000FF731C /* iSSLocationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D1EE9192100AB78002C76E3 /* Build configuration list for PBXNativeTarget "iSSLocationTests" */;
+			buildConfigurationList = 0DA44B0D24B5F67000FF731C /* Build configuration list for PBXNativeTarget "iSSLocationTests" */;
 			buildPhases = (
-				0282AA1FB396D04D1A698B8B /* [CP] Check Pods Manifest.lock */,
-				0D1EE8FE2100AB78002C76E3 /* Sources */,
-				0D1EE8FF2100AB78002C76E3 /* Frameworks */,
-				0D1EE9002100AB78002C76E3 /* Resources */,
+				0DA44B0224B5F67000FF731C /* Sources */,
+				0DA44B0324B5F67000FF731C /* Frameworks */,
+				0DA44B0424B5F67000FF731C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0D1EE9042100AB78002C76E3 /* PBXTargetDependency */,
+				0DA44B0C24B5F67000FF731C /* PBXTargetDependency */,
 			);
 			name = iSSLocationTests;
 			productName = iSSLocationTests;
-			productReference = 0D1EE9022100AB78002C76E3 /* iSSLocationTests.xctest */;
+			productReference = 0DA44B0624B5F67000FF731C /* iSSLocationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0D1EE90C2100AB78002C76E3 /* iSSLocationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0D1EE91C2100AB78002C76E3 /* Build configuration list for PBXNativeTarget "iSSLocationUITests" */;
-			buildPhases = (
-				3A26CC6830C3BC22FECD2BEE /* [CP] Check Pods Manifest.lock */,
-				0D1EE9092100AB78002C76E3 /* Sources */,
-				0D1EE90A2100AB78002C76E3 /* Frameworks */,
-				0D1EE90B2100AB78002C76E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0D1EE90F2100AB78002C76E3 /* PBXTargetDependency */,
-			);
-			name = iSSLocationUITests;
-			productName = iSSLocationUITests;
-			productReference = 0D1EE90D2100AB78002C76E3 /* iSSLocationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -313,19 +284,15 @@
 		0D1EE8E62100AB77002C76E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Aminjoni Abdullozoda";
 				TargetAttributes = {
 					0D1EE8ED2100AB77002C76E3 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					0D1EE9012100AB78002C76E3 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 0D1EE8ED2100AB77002C76E3;
-					};
-					0D1EE90C2100AB78002C76E3 = {
-						CreatedOnToolsVersion = 9.4.1;
+					0DA44B0524B5F67000FF731C = {
+						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 0D1EE8ED2100AB77002C76E3;
 					};
 				};
@@ -344,8 +311,7 @@
 			projectRoot = "";
 			targets = (
 				0D1EE8ED2100AB77002C76E3 /* iSSLocation */,
-				0D1EE9012100AB78002C76E3 /* iSSLocationTests */,
-				0D1EE90C2100AB78002C76E3 /* iSSLocationUITests */,
+				0DA44B0524B5F67000FF731C /* iSSLocationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,14 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D1EE9002100AB78002C76E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D1EE90B2100AB78002C76E3 /* Resources */ = {
+		0DA44B0424B5F67000FF731C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,42 +337,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0282AA1FB396D04D1A698B8B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iSSLocationTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3A26CC6830C3BC22FECD2BEE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iSSLocationUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		55E30AC649D8075ED6733B4D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,33 +397,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D1EE8FE2100AB78002C76E3 /* Sources */ = {
+		0DA44B0224B5F67000FF731C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D1EE9072100AB78002C76E3 /* iSSLocationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D1EE9092100AB78002C76E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0DA44B1324B5F7C000FF731C /* iSSCrewTest.swift in Sources */,
+				0DA44B0924B5F67000FF731C /* iSSLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D1EE9042100AB78002C76E3 /* PBXTargetDependency */ = {
+		0DA44B0C24B5F67000FF731C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0D1EE8ED2100AB77002C76E3 /* iSSLocation */;
-			targetProxy = 0D1EE9032100AB78002C76E3 /* PBXContainerItemProxy */;
-		};
-		0D1EE90F2100AB78002C76E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0D1EE8ED2100AB77002C76E3 /* iSSLocation */;
-			targetProxy = 0D1EE90E2100AB78002C76E3 /* PBXContainerItemProxy */;
+			targetProxy = 0DA44B0B24B5F67000FF731C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -575,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -629,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -678,89 +590,46 @@
 			};
 			name = Release;
 		};
-		0D1EE91A2100AB78002C76E3 /* Debug */ = {
+		0DA44B0E24B5F67000FF731C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B3BA624BE98352E12868516 /* Pods-iSSLocationTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJENA3UE68;
+				DEVELOPMENT_TEAM = L4M78CKJZX;
 				INFOPLIST_FILE = iSSLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amin.iSSLocationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSSLocation.app/iSSLocation";
 			};
 			name = Debug;
 		};
-		0D1EE91B2100AB78002C76E3 /* Release */ = {
+		0DA44B0F24B5F67000FF731C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4D084A3EADA4A7673CC774C /* Pods-iSSLocationTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJENA3UE68;
+				DEVELOPMENT_TEAM = L4M78CKJZX;
 				INFOPLIST_FILE = iSSLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amin.iSSLocationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSSLocation.app/iSSLocation";
-			};
-			name = Release;
-		};
-		0D1EE91D2100AB78002C76E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B25BD4DC2E5A5A2D0BF4E74A /* Pods-iSSLocationUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJENA3UE68;
-				INFOPLIST_FILE = iSSLocationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amin.iSSLocationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iSSLocation;
-			};
-			name = Debug;
-		};
-		0D1EE91E2100AB78002C76E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5077DFF8899E0476423197 /* Pods-iSSLocationUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJENA3UE68;
-				INFOPLIST_FILE = iSSLocationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amin.iSSLocationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iSSLocation;
 			};
 			name = Release;
 		};
@@ -785,20 +654,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D1EE9192100AB78002C76E3 /* Build configuration list for PBXNativeTarget "iSSLocationTests" */ = {
+		0DA44B0D24B5F67000FF731C /* Build configuration list for PBXNativeTarget "iSSLocationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D1EE91A2100AB78002C76E3 /* Debug */,
-				0D1EE91B2100AB78002C76E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0D1EE91C2100AB78002C76E3 /* Build configuration list for PBXNativeTarget "iSSLocationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D1EE91D2100AB78002C76E3 /* Debug */,
-				0D1EE91E2100AB78002C76E3 /* Release */,
+				0DA44B0E24B5F67000FF731C /* Debug */,
+				0DA44B0F24B5F67000FF731C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
