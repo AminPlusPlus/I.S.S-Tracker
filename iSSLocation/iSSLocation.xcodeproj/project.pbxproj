@@ -17,6 +17,9 @@
 		0D1EE92B2100BE91002C76E3 /* ISSCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */; };
 		0D1EE92F21011EAB002C76E3 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE92E21011EAB002C76E3 /* CustomCalloutView.swift */; };
 		0D1EE93121013609002C76E3 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE93021013609002C76E3 /* CustomAnnotationView.swift */; };
+		0D2290F224B6287600A979B6 /* News+Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2290F124B6287600A979B6 /* News+Article.swift */; };
+		0D2290F424B628A700A979B6 /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2290F324B628A700A979B6 /* NewsRepository.swift */; };
+		0D2290F824B62AA000A979B6 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2290F724B62AA000A979B6 /* Box.swift */; };
 		0D32355124A0086A0037748A /* DetailCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355024A0086A0037748A /* DetailCardViewController.swift */; };
 		0D32355324A01D870037748A /* SatelliteAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355224A01D870037748A /* SatelliteAnnotationView.swift */; };
 		0D32355524A01FB80037748A /* SatelliteAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355424A01FB80037748A /* SatelliteAnotation.swift */; };
@@ -53,6 +56,9 @@
 		0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSCrew.swift; sourceTree = "<group>"; };
 		0D1EE92E21011EAB002C76E3 /* CustomCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
 		0D1EE93021013609002C76E3 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		0D2290F124B6287600A979B6 /* News+Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+Article.swift"; sourceTree = "<group>"; };
+		0D2290F324B628A700A979B6 /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
+		0D2290F724B62AA000A979B6 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		0D32355024A0086A0037748A /* DetailCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCardViewController.swift; path = iSSLocation/Controllers/DetailCardViewController.swift; sourceTree = SOURCE_ROOT; };
 		0D32355224A01D870037748A /* SatelliteAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteAnnotationView.swift; sourceTree = "<group>"; };
 		0D32355424A01FB80037748A /* SatelliteAnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteAnotation.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 				0D1EE9212100ABE5002C76E3 /* Views */,
 				0D1EE9202100ABDF002C76E3 /* Models */,
 				0D1EE91F2100ABCF002C76E3 /* Controllers */,
+				0D2290F724B62AA000A979B6 /* Box.swift */,
 			);
 			path = iSSLocation;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				0D1EE9262100B03E002C76E3 /* ISSLocation.swift */,
 				0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */,
 				0D32355424A01FB80037748A /* SatelliteAnotation.swift */,
+				0D2290F124B6287600A979B6 /* News+Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				0DAA864224AD74BE00B4D219 /* IssRepository.swift */,
+				0D2290F324B628A700A979B6 /* NewsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -388,8 +397,11 @@
 				0D1EE8F42100AB77002C76E3 /* IssMapVC.swift in Sources */,
 				0DE90D26248170F900F6106D /* HomeViewController.swift in Sources */,
 				0D1EE92B2100BE91002C76E3 /* ISSCrew.swift in Sources */,
+				0D2290F824B62AA000A979B6 /* Box.swift in Sources */,
+				0D2290F224B6287600A979B6 /* News+Article.swift in Sources */,
 				0D1EE8F22100AB77002C76E3 /* AppDelegate.swift in Sources */,
 				0D1EE93121013609002C76E3 /* CustomAnnotationView.swift in Sources */,
+				0D2290F424B628A700A979B6 /* NewsRepository.swift in Sources */,
 				0D32355324A01D870037748A /* SatelliteAnnotationView.swift in Sources */,
 				0DAA864324AD74BE00B4D219 /* IssRepository.swift in Sources */,
 				0D1EE9292100B0F6002C76E3 /* DataService.swift in Sources */,
