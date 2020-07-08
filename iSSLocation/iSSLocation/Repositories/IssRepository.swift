@@ -11,11 +11,9 @@ import Combine
 
 class IssRepository {
     
-    static func fetchLocationISS() -> AnyPublisher<ISSLocation,Error> {
-        let request = URLRequest(url: Endpoint.location.url)
-        return Networking.run(request)
-            .map(\.value)
-            .eraseToAnyPublisher()
-        
-    }
+    static func requestLocationISS (completionHandler : @escaping (Result<ISSLocation,APIError>) -> Void ) {
+    
+         Networking.request(url: Endpoint.ResourcePath.location.path, completionHandler: completionHandler)
+     
+     }
 }
