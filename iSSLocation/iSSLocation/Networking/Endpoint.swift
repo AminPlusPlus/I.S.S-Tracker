@@ -8,25 +8,16 @@
 
 import Foundation
 
-enum Endpoint {
-    case crew
-    case location
-}
-
-
-private extension URL {
-    static func makeForEndpoint(_ endpoint: String) -> URL {
-        URL(string: "http://api.open-notify.org/\(endpoint)")!
+class Endpoint {
+    
+    static let baseURL = "http://api.open-notify.org/"
+    
+    enum ResourcePath : String {
+        case location = "iss-now.json"
+        case crew = "astros.json"
+        
+        var path : String {
+            return baseURL + rawValue;
+        }
     }
-}
-
-extension Endpoint {
-    var url: URL {
-        switch self {
-        case .crew:
-            return .makeForEndpoint("astros.json")
-        case .location:
-            return .makeForEndpoint("iss-now.json")
-    }
-}
 }

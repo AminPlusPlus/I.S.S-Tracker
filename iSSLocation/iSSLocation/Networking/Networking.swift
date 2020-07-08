@@ -7,12 +7,20 @@
 //
 
 import Foundation
-import Combine
-enum APIError: Error, LocalizedError {
-    case unknown, apiError(reason: String)
+
+enum APIError: Error {
+    case URL_Problem
+    case invalidResponce
+    case unknown
+    case apiError(reason: String)
+
 
     var errorDescription: String? {
         switch self {
+        case .URL_Problem:
+            return "URL requestion is not correct!"
+        case .invalidResponce:
+            return "Invalid responce"
         case .unknown:
             return "Unknown error"
         case .apiError(let reason):
@@ -21,21 +29,51 @@ enum APIError: Error, LocalizedError {
     }
 }
 
-struct Response<T> {
-    let value: T
-    let response: URLResponse
-}
 
 class Networking {
+    
+    /// Generic Request
+    /// - Parameters:
+    ///   - url: URL
+    ///   - completionHandler: T : Decotable
+    static func request <T : Decodable> (url : String, completionHandler : @escaping (Result<T,APIError>) -> Void) {
         
-    static func run<T: Decodable>(_ request: URLRequest, _ decoder: JSONDecoder = JSONDecoder()) -> AnyPublisher<Response<T>, Error> {
-        return URLSession.shared
-            .dataTaskPublisher(for: request)
-            .tryMap { result -> Response<T> in
-                let value = try decoder.decode(T.self, from: result.data) 
-                return Response(value: value, response: result.response)
+        
+        guard let url = URL(string: url) else {
+            completionHandler(.failure(.URL_Problem))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, responce, error) in
+            
+            guard let responce = responce as? HTTPURLResponse, responce.statusCode == 200 else  {
+                completionHandler(.failure(.invalidResponce))
+                return
             }
-            .receive(on: DispatchQueue.main)
-            .eraseToAnyPublisher()
+            
+            guard let data = data else {
+                completionHandler(.failure(.apiError(reason: "Data receiving something wrong with that")))
+                return
+            }
+            
+            //parse
+            do {
+                
+                let jsonDecoder = JSONDecoder()
+                let result = try jsonDecoder.decode(T.self, from: data)
+                completionHandler(.success(result))
+                
+            }catch {
+                completionHandler(.failure(.apiError(reason: "parsing issue")))
+            }
+            
+            
+            
+        }
+        
+        task.resume()
+        
+        
     }
+   
 }
