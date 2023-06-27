@@ -66,3 +66,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+
+iSSLocation/iSSLocation.xcodeproj/
+iSSLocation/iSSLocation.xcodeproj/project.xcworkspace/
+iSSLocation/iSSLocation.xcodeproj/xcshareddata/swiftpm/

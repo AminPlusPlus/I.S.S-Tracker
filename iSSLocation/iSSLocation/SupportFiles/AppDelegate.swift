@@ -1,25 +1,12 @@
-//
-//  AppDelegate.swift
-//  iSSLocation
-//
-//  Created by Aminjoni Abdullozoda on 7/19/18.
-//  Copyright © 2018 Aminjoni Abdullozoda. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-       
-        window?.rootViewController = HomeViewController()
-        window?.makeKeyAndVisible()
-        
+        FirebaseApp.configure()
         return true
     }
 

@@ -3,34 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D1EE8F22100AB77002C76E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE8F12100AB77002C76E3 /* AppDelegate.swift */; };
-		0D1EE8F42100AB77002C76E3 /* IssMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE8F32100AB77002C76E3 /* IssMapVC.swift */; };
-		0D1EE8F72100AB77002C76E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1EE8F52100AB77002C76E3 /* Main.storyboard */; };
 		0D1EE8F92100AB78002C76E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1EE8F82100AB78002C76E3 /* Assets.xcassets */; };
 		0D1EE8FC2100AB78002C76E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1EE8FA2100AB78002C76E3 /* LaunchScreen.storyboard */; };
-		0D1EE9272100B03E002C76E3 /* ISSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE9262100B03E002C76E3 /* ISSLocation.swift */; };
 		0D1EE9292100B0F6002C76E3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE9282100B0F6002C76E3 /* DataService.swift */; };
-		0D1EE92B2100BE91002C76E3 /* ISSCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */; };
-		0D1EE92F21011EAB002C76E3 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE92E21011EAB002C76E3 /* CustomCalloutView.swift */; };
-		0D1EE93121013609002C76E3 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1EE93021013609002C76E3 /* CustomAnnotationView.swift */; };
-		0D2290F224B6287600A979B6 /* News+Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2290F124B6287600A979B6 /* News+Article.swift */; };
-		0D2290F424B628A700A979B6 /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2290F324B628A700A979B6 /* NewsRepository.swift */; };
-		0D2290F824B62AA000A979B6 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2290F724B62AA000A979B6 /* Box.swift */; };
-		0D32355124A0086A0037748A /* DetailCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355024A0086A0037748A /* DetailCardViewController.swift */; };
-		0D32355324A01D870037748A /* SatelliteAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355224A01D870037748A /* SatelliteAnnotationView.swift */; };
-		0D32355524A01FB80037748A /* SatelliteAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355424A01FB80037748A /* SatelliteAnotation.swift */; };
-		0D32355924A16EBE0037748A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32355824A16EBE0037748A /* Endpoint.swift */; };
-		0D49A2A2248C20B900549505 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A2A1248C20B900549505 /* CardView.swift */; };
 		0DA44B0924B5F67000FF731C /* iSSLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA44B0824B5F67000FF731C /* iSSLocationTests.swift */; };
-		0DA44B1324B5F7C000FF731C /* iSSCrewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA44B1224B5F7C000FF731C /* iSSCrewTest.swift */; };
-		0DAA864324AD74BE00B4D219 /* IssRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAA864224AD74BE00B4D219 /* IssRepository.swift */; };
 		0DAA864624AD786F00B4D219 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAA864524AD786F00B4D219 /* Networking.swift */; };
-		0DE90D26248170F900F6106D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE90D25248170F900F6106D /* HomeViewController.swift */; };
-		9896C7F9496F991237B391ED /* Pods_iSSLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FF1F4D79341523131B1868 /* Pods_iSSLocation.framework */; };
+		274F020A2A1AC460005B36A3 /* CrewMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F02092A1AC460005B36A3 /* CrewMembersView.swift */; };
+		274F020C2A1AC59B005B36A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 274F020B2A1AC59B005B36A3 /* GoogleService-Info.plist */; };
+		274F02142A1AC6F3005B36A3 /* AstroCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F02132A1AC6F3005B36A3 /* AstroCrew.swift */; };
+		274F02162A1AC7BB005B36A3 /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F02152A1AC7BB005B36A3 /* JsonReader.swift */; };
+		274F02182A1AC9D2005B36A3 /* ATImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F02172A1AC9D2005B36A3 /* ATImage.swift */; };
+		274F021B2A1ACBAD005B36A3 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 274F021A2A1ACBAD005B36A3 /* FirebaseAnalyticsSwift */; };
+		274F021D2A1ACBAD005B36A3 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 274F021C2A1ACBAD005B36A3 /* FirebaseDatabaseSwift */; };
+		274F021F2A1ACBAD005B36A3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 274F021E2A1ACBAD005B36A3 /* FirebaseFirestoreSwift */; };
+		274F02242A25938A005B36A3 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F02232A25938A005B36A3 /* AboutAppView.swift */; };
+		274F02262A2599C5005B36A3 /* ISSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F02252A2599C5005B36A3 /* ISSLocation.swift */; };
+		276FC8A729F25B71003C3721 /* AstroTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FC8A629F25B71003C3721 /* AstroTrack.swift */; };
+		276FC8AC29F25E39003C3721 /* FrontPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FC8AB29F25E39003C3721 /* FrontPageView.swift */; };
+		276FC8AE29F25EA7003C3721 /* FrontPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FC8AD29F25EA7003C3721 /* FrontPageViewModel.swift */; };
+		27A1BFF42A07388D000AC249 /* SatelliteKit in Frameworks */ = {isa = PBXBuildFile; productRef = 27A1BFF32A07388D000AC249 /* SatelliteKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,42 +40,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D1EE8EE2100AB77002C76E3 /* iSSLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSSLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D1EE8EE2100AB77002C76E3 /* Atro Track - DEBUG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atro Track - DEBUG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1EE8F12100AB77002C76E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D1EE8F32100AB77002C76E3 /* IssMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssMapVC.swift; sourceTree = "<group>"; };
-		0D1EE8F62100AB77002C76E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D1EE8F82100AB78002C76E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D1EE8FB2100AB78002C76E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D1EE8FD2100AB78002C76E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D1EE9262100B03E002C76E3 /* ISSLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocation.swift; sourceTree = "<group>"; };
 		0D1EE9282100B0F6002C76E3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSCrew.swift; sourceTree = "<group>"; };
-		0D1EE92E21011EAB002C76E3 /* CustomCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
-		0D1EE93021013609002C76E3 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
-		0D2290F124B6287600A979B6 /* News+Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+Article.swift"; sourceTree = "<group>"; };
-		0D2290F324B628A700A979B6 /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
-		0D2290F724B62AA000A979B6 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
-		0D32355024A0086A0037748A /* DetailCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCardViewController.swift; path = iSSLocation/Controllers/DetailCardViewController.swift; sourceTree = SOURCE_ROOT; };
-		0D32355224A01D870037748A /* SatelliteAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteAnnotationView.swift; sourceTree = "<group>"; };
-		0D32355424A01FB80037748A /* SatelliteAnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatelliteAnotation.swift; sourceTree = "<group>"; };
-		0D32355824A16EBE0037748A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		0D49A2A1248C20B900549505 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0DA44B0624B5F67000FF731C /* iSSLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSSLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA44B0824B5F67000FF731C /* iSSLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSSLocationTests.swift; sourceTree = "<group>"; };
 		0DA44B0A24B5F67000FF731C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DA44B1224B5F7C000FF731C /* iSSCrewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSSCrewTest.swift; sourceTree = "<group>"; };
-		0DAA864224AD74BE00B4D219 /* IssRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssRepository.swift; sourceTree = "<group>"; };
 		0DAA864524AD786F00B4D219 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		0DE90D25248170F900F6106D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		277C5E7976F729445A6EB933 /* Pods-iSSLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSSLocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSSLocation/Pods-iSSLocation.release.xcconfig"; sourceTree = "<group>"; };
-		31D5EEA2A340104ABB34EEF5 /* Pods-iSSLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSSLocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSSLocation/Pods-iSSLocation.debug.xcconfig"; sourceTree = "<group>"; };
-		32FF1F4D79341523131B1868 /* Pods_iSSLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSSLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D447424D7B33E9C6D356484 /* Pods_iSSLocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSSLocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B3BA624BE98352E12868516 /* Pods-iSSLocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSSLocationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSSLocationTests/Pods-iSSLocationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AC5077DFF8899E0476423197 /* Pods-iSSLocationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSSLocationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSSLocationUITests/Pods-iSSLocationUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B25BD4DC2E5A5A2D0BF4E74A /* Pods-iSSLocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSSLocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSSLocationUITests/Pods-iSSLocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D6822F5D2A8AD0207909E1E9 /* Pods_iSSLocationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSSLocationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4D084A3EADA4A7673CC774C /* Pods-iSSLocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSSLocationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSSLocationTests/Pods-iSSLocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		274F02092A1AC460005B36A3 /* CrewMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMembersView.swift; sourceTree = "<group>"; };
+		274F020B2A1AC59B005B36A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		274F02132A1AC6F3005B36A3 /* AstroCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroCrew.swift; sourceTree = "<group>"; };
+		274F02152A1AC7BB005B36A3 /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		274F02172A1AC9D2005B36A3 /* ATImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATImage.swift; sourceTree = "<group>"; };
+		274F02232A25938A005B36A3 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
+		274F02252A2599C5005B36A3 /* ISSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISSLocation.swift; sourceTree = "<group>"; };
+		276FC8A629F25B71003C3721 /* AstroTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroTrack.swift; sourceTree = "<group>"; };
+		276FC8AB29F25E39003C3721 /* FrontPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageView.swift; sourceTree = "<group>"; };
+		276FC8AD29F25EA7003C3721 /* FrontPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9896C7F9496F991237B391ED /* Pods_iSSLocation.framework in Frameworks */,
+				274F021D2A1ACBAD005B36A3 /* FirebaseDatabaseSwift in Frameworks */,
+				274F021B2A1ACBAD005B36A3 /* FirebaseAnalyticsSwift in Frameworks */,
+				27A1BFF42A07388D000AC249 /* SatelliteKit in Frameworks */,
+				274F021F2A1ACBAD005B36A3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,31 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A44DCA69B54BFC2FC7F0BEF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				32FF1F4D79341523131B1868 /* Pods_iSSLocation.framework */,
-				5D447424D7B33E9C6D356484 /* Pods_iSSLocationTests.framework */,
-				D6822F5D2A8AD0207909E1E9 /* Pods_iSSLocationUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0D1EE8E52100AB77002C76E3 = {
 			isa = PBXGroup;
 			children = (
 				0D1EE8F02100AB77002C76E3 /* iSSLocation */,
 				0DA44B0724B5F67000FF731C /* iSSLocationTests */,
 				0D1EE8EF2100AB77002C76E3 /* Products */,
-				811CFE62008C831000BA0AA4 /* Pods */,
-				0A44DCA69B54BFC2FC7F0BEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0D1EE8EF2100AB77002C76E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D1EE8EE2100AB77002C76E3 /* iSSLocation.app */,
+				0D1EE8EE2100AB77002C76E3 /* Atro Track - DEBUG.app */,
 				0DA44B0624B5F67000FF731C /* iSSLocationTests.xctest */,
 			);
 			name = Products;
@@ -134,55 +105,19 @@
 		0D1EE8F02100AB77002C76E3 /* iSSLocation */ = {
 			isa = PBXGroup;
 			children = (
+				274F020B2A1AC59B005B36A3 /* GoogleService-Info.plist */,
+				276FC8A829F25DF1003C3721 /* Production */,
 				0DAA864424AD785400B4D219 /* Networking */,
-				0DAA864124AD745C00B4D219 /* Repositories */,
-				0D1EE9232100ABF2002C76E3 /* Services */,
 				0D1EE9222100ABEA002C76E3 /* SupportFiles */,
-				0D1EE9212100ABE5002C76E3 /* Views */,
-				0D1EE9202100ABDF002C76E3 /* Models */,
-				0D1EE91F2100ABCF002C76E3 /* Controllers */,
-				0D2290F724B62AA000A979B6 /* Box.swift */,
+				276FC8A629F25B71003C3721 /* AstroTrack.swift */,
 			);
 			path = iSSLocation;
-			sourceTree = "<group>";
-		};
-		0D1EE91F2100ABCF002C76E3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0D32355024A0086A0037748A /* DetailCardViewController.swift */,
-				0D1EE8F32100AB77002C76E3 /* IssMapVC.swift */,
-				0DE90D25248170F900F6106D /* HomeViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		0D1EE9202100ABDF002C76E3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0D1EE9262100B03E002C76E3 /* ISSLocation.swift */,
-				0D1EE92A2100BE91002C76E3 /* ISSCrew.swift */,
-				0D32355424A01FB80037748A /* SatelliteAnotation.swift */,
-				0D2290F124B6287600A979B6 /* News+Article.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0D1EE9212100ABE5002C76E3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0D1EE92E21011EAB002C76E3 /* CustomCalloutView.swift */,
-				0D1EE93021013609002C76E3 /* CustomAnnotationView.swift */,
-				0D49A2A1248C20B900549505 /* CardView.swift */,
-				0D32355224A01D870037748A /* SatelliteAnnotationView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0D1EE9222100ABEA002C76E3 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
 				0D1EE8F12100AB77002C76E3 /* AppDelegate.swift */,
-				0D1EE8F52100AB77002C76E3 /* Main.storyboard */,
 				0D1EE8F82100AB78002C76E3 /* Assets.xcassets */,
 				0D1EE8FA2100AB78002C76E3 /* LaunchScreen.storyboard */,
 				0D1EE8FD2100AB78002C76E3 /* Info.plist */,
@@ -201,50 +136,74 @@
 		0DA44B0724B5F67000FF731C /* iSSLocationTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DA44B1124B5F7A200FF731C /* Model */,
 				0DA44B0824B5F67000FF731C /* iSSLocationTests.swift */,
 				0DA44B0A24B5F67000FF731C /* Info.plist */,
 			);
 			path = iSSLocationTests;
 			sourceTree = "<group>";
 		};
-		0DA44B1124B5F7A200FF731C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0DA44B1224B5F7C000FF731C /* iSSCrewTest.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0DAA864124AD745C00B4D219 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				0DAA864224AD74BE00B4D219 /* IssRepository.swift */,
-				0D2290F324B628A700A979B6 /* NewsRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
 		0DAA864424AD785400B4D219 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				0D32355824A16EBE0037748A /* Endpoint.swift */,
 				0DAA864524AD786F00B4D219 /* Networking.swift */,
+				274F02152A1AC7BB005B36A3 /* JsonReader.swift */,
+				0D1EE9232100ABF2002C76E3 /* Services */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		811CFE62008C831000BA0AA4 /* Pods */ = {
+		274F02202A1F1F5C005B36A3 /* Crew */ = {
 			isa = PBXGroup;
 			children = (
-				31D5EEA2A340104ABB34EEF5 /* Pods-iSSLocation.debug.xcconfig */,
-				277C5E7976F729445A6EB933 /* Pods-iSSLocation.release.xcconfig */,
-				6B3BA624BE98352E12868516 /* Pods-iSSLocationTests.debug.xcconfig */,
-				F4D084A3EADA4A7673CC774C /* Pods-iSSLocationTests.release.xcconfig */,
-				B25BD4DC2E5A5A2D0BF4E74A /* Pods-iSSLocationUITests.debug.xcconfig */,
-				AC5077DFF8899E0476423197 /* Pods-iSSLocationUITests.release.xcconfig */,
+				274F02212A1F212B005B36A3 /* Components */,
 			);
-			name = Pods;
+			path = Crew;
+			sourceTree = "<group>";
+		};
+		274F02212A1F212B005B36A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				274F02132A1AC6F3005B36A3 /* AstroCrew.swift */,
+				274F02092A1AC460005B36A3 /* CrewMembersView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		274F02222A259371005B36A3 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				274F02232A25938A005B36A3 /* AboutAppView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		276FC8A829F25DF1003C3721 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				274F02222A259371005B36A3 /* About */,
+				274F02202A1F1F5C005B36A3 /* Crew */,
+				276FC8A929F25DFA003C3721 /* Frontpage */,
+				274F02172A1AC9D2005B36A3 /* ATImage.swift */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		276FC8A929F25DFA003C3721 /* Frontpage */ = {
+			isa = PBXGroup;
+			children = (
+				274F02252A2599C5005B36A3 /* ISSLocation.swift */,
+				276FC8AD29F25EA7003C3721 /* FrontPageViewModel.swift */,
+				276FC8AA29F25E15003C3721 /* Components */,
+			);
+			path = Frontpage;
+			sourceTree = "<group>";
+		};
+		276FC8AA29F25E15003C3721 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				276FC8AB29F25E39003C3721 /* FrontPageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,19 +213,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D1EE9162100AB78002C76E3 /* Build configuration list for PBXNativeTarget "iSSLocation" */;
 			buildPhases = (
-				7DC1905014612779CEC543A6 /* [CP] Check Pods Manifest.lock */,
 				0D1EE8EA2100AB77002C76E3 /* Sources */,
 				0D1EE8EB2100AB77002C76E3 /* Frameworks */,
 				0D1EE8EC2100AB77002C76E3 /* Resources */,
-				55E30AC649D8075ED6733B4D /* [CP] Embed Pods Frameworks */,
+				274F02272A25A54E005B36A3 /* Set Build Number */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iSSLocation;
+			packageProductDependencies = (
+				27A1BFF32A07388D000AC249 /* SatelliteKit */,
+				274F021A2A1ACBAD005B36A3 /* FirebaseAnalyticsSwift */,
+				274F021C2A1ACBAD005B36A3 /* FirebaseDatabaseSwift */,
+				274F021E2A1ACBAD005B36A3 /* FirebaseFirestoreSwift */,
+			);
 			productName = iSSLocation;
-			productReference = 0D1EE8EE2100AB77002C76E3 /* iSSLocation.app */;
+			productReference = 0D1EE8EE2100AB77002C76E3 /* Atro Track - DEBUG.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0DA44B0524B5F67000FF731C /* iSSLocationTests */ = {
@@ -315,6 +279,10 @@
 				Base,
 			);
 			mainGroup = 0D1EE8E52100AB77002C76E3;
+			packageReferences = (
+				27A1BFF22A07388D000AC249 /* XCRemoteSwiftPackageReference "SatelliteKit" */,
+				274F02192A1ACBAD005B36A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0D1EE8EF2100AB77002C76E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,9 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274F020C2A1AC59B005B36A3 /* GoogleService-Info.plist in Resources */,
 				0D1EE8FC2100AB78002C76E3 /* LaunchScreen.storyboard in Resources */,
 				0D1EE8F92100AB78002C76E3 /* Assets.xcassets in Resources */,
-				0D1EE8F72100AB77002C76E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,40 +314,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55E30AC649D8075ED6733B4D /* [CP] Embed Pods Frameworks */ = {
+		274F02272A25A54E005B36A3 /* Set Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iSSLocation/Pods-iSSLocation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iSSLocation/Pods-iSSLocation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iSSLocation/Pods-iSSLocation-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DC1905014612779CEC543A6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iSSLocation-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -388,24 +339,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D32355924A16EBE0037748A /* Endpoint.swift in Sources */,
-				0D1EE92F21011EAB002C76E3 /* CustomCalloutView.swift in Sources */,
-				0D32355124A0086A0037748A /* DetailCardViewController.swift in Sources */,
+				276FC8A729F25B71003C3721 /* AstroTrack.swift in Sources */,
 				0DAA864624AD786F00B4D219 /* Networking.swift in Sources */,
-				0D49A2A2248C20B900549505 /* CardView.swift in Sources */,
-				0D1EE9272100B03E002C76E3 /* ISSLocation.swift in Sources */,
-				0D1EE8F42100AB77002C76E3 /* IssMapVC.swift in Sources */,
-				0DE90D26248170F900F6106D /* HomeViewController.swift in Sources */,
-				0D1EE92B2100BE91002C76E3 /* ISSCrew.swift in Sources */,
-				0D2290F824B62AA000A979B6 /* Box.swift in Sources */,
-				0D2290F224B6287600A979B6 /* News+Article.swift in Sources */,
+				274F02182A1AC9D2005B36A3 /* ATImage.swift in Sources */,
+				274F02142A1AC6F3005B36A3 /* AstroCrew.swift in Sources */,
 				0D1EE8F22100AB77002C76E3 /* AppDelegate.swift in Sources */,
-				0D1EE93121013609002C76E3 /* CustomAnnotationView.swift in Sources */,
-				0D2290F424B628A700A979B6 /* NewsRepository.swift in Sources */,
-				0D32355324A01D870037748A /* SatelliteAnnotationView.swift in Sources */,
-				0DAA864324AD74BE00B4D219 /* IssRepository.swift in Sources */,
+				276FC8AE29F25EA7003C3721 /* FrontPageViewModel.swift in Sources */,
 				0D1EE9292100B0F6002C76E3 /* DataService.swift in Sources */,
-				0D32355524A01FB80037748A /* SatelliteAnotation.swift in Sources */,
+				274F02242A25938A005B36A3 /* AboutAppView.swift in Sources */,
+				274F020A2A1AC460005B36A3 /* CrewMembersView.swift in Sources */,
+				274F02262A2599C5005B36A3 /* ISSLocation.swift in Sources */,
+				276FC8AC29F25E39003C3721 /* FrontPageView.swift in Sources */,
+				274F02162A1AC7BB005B36A3 /* JsonReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DA44B1324B5F7C000FF731C /* iSSCrewTest.swift in Sources */,
 				0DA44B0924B5F67000FF731C /* iSSLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,14 +373,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0D1EE8F52100AB77002C76E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D1EE8F62100AB77002C76E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0D1EE8FA2100AB78002C76E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -452,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = "Atro Track - DEBUG";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -499,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -512,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = "Astro Track";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -553,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -564,19 +502,22 @@
 		};
 		0D1EE9172100AB78002C76E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31D5EEA2A340104ABB34EEF5 /* Pods-iSSLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(CFBundleVersion)";
 				DEVELOPMENT_TEAM = L4M78CKJZX;
 				INFOPLIST_FILE = "$(SRCROOT)/iSSLocation/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				INFOPLIST_KEY_CFBundleDisplayName = "Astro Track";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "$(CFBundleShortVersionString)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amin.iSSLocation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(APP_DISPLAY_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,19 +525,22 @@
 		};
 		0D1EE9182100AB78002C76E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 277C5E7976F729445A6EB933 /* Pods-iSSLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(CFBundleVersion)";
 				DEVELOPMENT_TEAM = L4M78CKJZX;
 				INFOPLIST_FILE = "$(SRCROOT)/iSSLocation/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				INFOPLIST_KEY_CFBundleDisplayName = "Astro Track";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "$(CFBundleShortVersionString)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amin.iSSLocation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(APP_DISPLAY_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -676,6 +620,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		274F02192A1ACBAD005B36A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		27A1BFF22A07388D000AC249 /* XCRemoteSwiftPackageReference "SatelliteKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gavineadie/SatelliteKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		274F021A2A1ACBAD005B36A3 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 274F02192A1ACBAD005B36A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		274F021C2A1ACBAD005B36A3 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 274F02192A1ACBAD005B36A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		274F021E2A1ACBAD005B36A3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 274F02192A1ACBAD005B36A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		27A1BFF32A07388D000AC249 /* SatelliteKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A1BFF22A07388D000AC249 /* XCRemoteSwiftPackageReference "SatelliteKit" */;
+			productName = SatelliteKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D1EE8E62100AB77002C76E3 /* Project object */;
 }
